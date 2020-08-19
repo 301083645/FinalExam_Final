@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * 
+ * File Name    : Final Exam (character builder)
+ * Author's name: Eunbee Lee
+ * Student ID   : 301083645
+ * Changes Made : 2020-08-18
  */
 
 namespace COMP123_M2020_FinalExam
