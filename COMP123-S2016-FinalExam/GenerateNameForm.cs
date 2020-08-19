@@ -17,25 +17,29 @@ namespace COMP123_M2020_FinalExam
             InitializeComponent();
         }
 
+        // method that pick FirstName and LastName randomly;
         private void GenerateNames()
         {
+            // create random
             Random random = new Random();
 
-            
+                // from where to where // 50 items
                 int number = random.Next(0, 49);
-
+                // put randomly picked name into the text box.
                 FirstNameTextBox.Text = FirstNameListBox.Items[number].ToString();
                 LastNameTextBox.Text = LastNameListBox.Items[number].ToString();
             
 
         }
         
+        // call the GenerateNames methods
         private void GenerateNameForm_Load(object sender, EventArgs e)
         {
             GenerateNames();
         }
 
-
+        // call the GenerateNames methods
+        // save value
         private void GenerateButton_Click_1(object sender, EventArgs e)
         {
             GenerateNames();
@@ -46,7 +50,13 @@ namespace COMP123_M2020_FinalExam
 
         private void NextButton_Click_1(object sender, EventArgs e)
         {
-            Program.abilityGenerator.Show();
+            //instantiate a new AbilityGeneratorForm
+            AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
+            // move to abilityGeneratorForm
+            abilityGeneratorForm.Show();
+
+            //Program.abilityGenerator.Show();
+            //hide this form
             this.Hide();
         }
     }

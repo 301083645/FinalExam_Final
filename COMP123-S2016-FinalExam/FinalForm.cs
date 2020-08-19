@@ -39,6 +39,7 @@ namespace COMP123_M2020_FinalExam
             Application.Exit();
         }
 
+        // get the saved data in character
         private void FinalForm_Load(object sender, EventArgs e)
         {
 
